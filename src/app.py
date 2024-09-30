@@ -28,7 +28,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 from load_creds import load_creds
 creds = load_creds()
-genai.configure(api_key='AIzaSyD6BHIlJEkxzHhUOlaVHuYBOKJzcmTk4BA')
+genai.configure(api_key='API_KEY')
      
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google_secret_key.json'
