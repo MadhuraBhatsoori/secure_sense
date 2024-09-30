@@ -1,0 +1,146 @@
+/* General container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #087231;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.app-header {
+  background-color: rgb(226, 65, 65); /* Set background to black */
+  padding: 16px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #fff; /* Set text color to white */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/* Messages container */
+.messages-container {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column; /* Ensure messages stack vertically */
+}
+
+.message {
+  max-width: 70%;
+  margin-bottom: 8px;
+  padding: 10px 16px;
+  border-radius: 40px;
+  display: inline-block;
+  clear: both; /* Ensure each message appears on a new line */
+}
+
+.user-message {
+  background-color: #0a3766;
+  color: #fff;
+  align-self: flex-end; /* Align user messages to the right */
+}
+
+.ai-message {
+  background-color: black;
+  color: white;
+  align-self: flex-start; /* Align AI messages to the left */
+}
+
+
+/* Topics container */
+.topics-container {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+/* Topics button styles */
+.topic-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 0 4px;
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.topic-button:hover {
+  background-color: #ddd;
+}
+
+/* Selected topic buttons */
+.topic-button.selected {
+  color: #fff;
+}
+
+.topic-button.phishing-email.selected {
+  background-color: #007bff; /* Blue for phishing email */
+}
+
+.topic-button.spam-calls.selected {
+  background-color: #28a745; /* Green for spam calls */
+}
+
+.topic-button.general-security-advice.selected {
+  background-color: #6f42c1; /* Purple for general advice */
+}
+
+
+.icon {
+  margin-right: 4px;
+}
+
+
+/* Container for the message input */
+.message-input-container {
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  justify-content: center; /* Center the container */
+}
+
+.message-input-wrapper {
+  width: 50%; /* Make the input container half the width */
+  display: flex;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.message-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.message-send-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.message-send-button:hover {
+  background-color: black;
+}
+
+
+
